@@ -2,7 +2,6 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFF;
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02;
@@ -322,7 +321,6 @@ width: calc((100% - 72px) / 4);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: #4D5AE5;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -413,8 +411,104 @@ letter-spacing: 0.02em;
 margin-bottom: 16px;
 }
 
-
-
 .footer-media-link:hover, .footer-media-link:focus{
     background-color: #31D0AA;
+}
+
+/* ========== BACKDROP STYLES ========== */
+.backdrop{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 72px 24px 24px;
+}
+
+.modal-close-button{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    fill: #2E2F42;
+    transition: background-color 250ms linear, fill 250ms linear;
+}
+
+.modal-close-button:hover, .modal-close-button:focus{
+    background-color: #404BBF;
+    fill: #FFFFFF;
+}
+
+.modal-slogan{
+    color: #2E2F42;
+    width: 360px;
+    text-align: center;    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* = line-height / font-size */
+    letter-spacing: 0.02em; /* = letter-spacing / font-size */
+    margin-bottom: 16px;
+}
+
+.contact-form-wrapper{
+    margin-bottom: 8px;
+}
+
+.contact-form-label{
+    display: block;
+    color:#8E8F99;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.contact-form-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding-left: 38px;
+}
+
+.contact-form-icon-wrapper{
+    position: relative;
+}
+.contact-form-icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
 }
