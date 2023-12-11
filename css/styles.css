@@ -463,7 +463,6 @@ margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     padding: 8px 24px;
@@ -479,6 +478,10 @@ margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+
+.subscribe-icon{
+    margin-left: 16px;
 }
 
 
