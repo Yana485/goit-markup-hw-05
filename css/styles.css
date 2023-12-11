@@ -415,19 +415,29 @@ margin-bottom: 16px;
     background-color: #31D0AA;
 }
 
+.subscribe-wrap{
+    display: block;
+}
+
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
 .subscribe-description{
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .subscribe-form-input{
     width: 264px;
     height: 40px;
-    margin-top: 16px;
-    margin-right: 24px;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -450,9 +460,11 @@ margin-bottom: 16px;
 }
 
 .subscribe-form-btn{
-    display: block;
+    display: flex;
     align-items: center;
-    width: 165px;
+    justify-content: center;
+    gap: 16px;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     border-radius: 4px;
